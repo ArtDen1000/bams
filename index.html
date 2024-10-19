@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Хакатон "БЭМС"</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="photo1.jpg" alt="Хакатон" class="header-image">
+        <h1>Хакатон по Автоматизации Процессов "БЭМС"</h1>
+        <nav>
+            <ul>
+                <li><a href="#description">Описание</a></li>
+                <li><a href="#contacts">Контакты</a></li>
+                <li><a href="#application">Заявка на участие</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="description">
+            <h2>Описание Хакатона</h2>
+            <p>Приглашаем студентов принять участие в хакатоне под названием "БЭМС", посвященном автоматизации процессов. Нам нужны боевые, энергичные, молодые, симпатичные девушки и юноши. В течение 6-12 часов участники будут работать в командах над проектами, направленными на разработку инновационных решений для автоматизации различных бизнес-процессов.</p>
+            <p>Хакатон включает менторскую поддержку и возможность представить свои идеи жюри.</p>
+        </section>
+
+        <section id="contacts">
+            <h2>Контакты администрации</h2>
+            <p>Если у вас есть вопросы, свяжитесь с нами:</p>
+            <p>Телефон: +7 (123) 456-78-90</p>
+            <p>Электронная почта: <a href="mailto:bams@hackathon.com">admin@hackathon.com</a></p>
+        </section>
+
+        <section id="application">
+            <h2>Форма заявки на участие</h2>
+            <form action="submit_application.php" method="POST">
+                <label for="name">Имя:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="team">Название команды (если есть):</label>
+                <input type="text" id="team" name="team">
+
+                <label for="experience">Ваш опыт в автоматизации:</label>
+                <textarea id="experience" name="experience" rows="4"></textarea>
+
+                <button type="submit">Отправить заявку</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Хакатон по Автоматизации Процессов. Все права защищены.</p>
+    </footer>
+</body>
+</html>
